@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heróis</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1><a href="">Vingadores</a></h1>
+                </div>
+                <div class="col-md-4">
+                    <form action="">
+                        <input type="text" id="pesquisa" placeholder="Pesquisar">
+                        <button type="button" class="btn btn-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                              </svg>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <nav class="d-flex justify-content-end">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#herois">Heróis</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="inicio">
+        <div class="container">
+            <div id="carousel-exemplo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d=block w-100" src="images/vingadores.jpg" alt="">
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d=block w-100" src="images/vingadores_2.jpg" alt="">
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d=block w-100" src="images/vingadores_3.webp" alt="">
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="herois" class="container">
+        <h1>Heróis</h1>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                <div class="card text-bg-dark">
+                    <div class="card-header">Capitão América</div>
+                    <img src="images/capitao-america.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                <div class="card text-bg-dark">
+                    <div class="card-header">Homem de Ferro</div>
+                    <img src="images/homem-de-ferro.png" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                <div class="card text-bg-dark">
+                    <div class="card-header">Thor</div>
+                    <img src="images/thor.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                <div class="card text-bg-dark">
+                    <div class="card-header">Hulk</div>
+                    <img src="images/hulk.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                <div class="card text-bg-dark">
+                    <div class="card-header">Viúva Negra</div>
+                    <img src="images/black-widow.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4 p-2">
+                <div class="card text-bg-dark">
+                    <div class="card-header">Gavião Arqueiro</div>
+                    <img src="images/hawkeye.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="lib/bootstrap.bundle.min.js"></script>
+</html>
